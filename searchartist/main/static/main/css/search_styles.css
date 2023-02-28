@@ -1,0 +1,181 @@
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 13%;
+  border-radius: 50%;
+  background: #1ed760;
+  transform: rotate(180deg);
+}
+.music {
+  position: absolute;
+  width: 10%;
+  height: 40%;
+  background: white;
+  border-radius: 50px;
+}
+.one {
+  left: 15%;
+  top: 30%;
+  animation: music 1s ease infinite alternate;
+}
+.two {
+  left: 30%;
+  top: 30%;
+  animation: music 1.3s ease infinite alternate;
+}
+.three {
+  left: 45%;
+  top: 30%;
+  animation: music 1.6s ease infinite alternate;
+}
+.four {
+  left: 60%;
+  top: 30%;
+  animation: music 1.9s ease infinite alternate;
+}
+.five {
+  left: 75%;
+  top: 30%;
+  animation: music 2.2s ease infinite alternate;
+}
+@keyframes music {
+  0% {
+    height: 10%;
+  }
+  100% {
+    height: 40%;
+  }
+}
+
+body{
+    background-color: #191414;
+}
+
+.left-img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 23px;
+    left: 30px;
+}
+
+.left-img>img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-block{
+    width: 704px;
+    height: 522px;
+    font-family: Gotham;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.main-text{
+    width: 704px;
+    height: 60px;
+    font-size: 44px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    margin: auto;
+}
+
+.main-input-block{
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.main-input-block-img{
+    width: 35px;
+    height: 35px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.main-input-block-input{
+    float: right;
+    width: 100%;
+    height: 96%;
+    border: none;
+    color: white;
+    background-color: #1ed760;
+    font-weight: bolder;
+    font-family: Gotham;
+    font-size: 30px;
+    text-indent: 12px;
+    border-radius: 7px;
+}
+
+.main-button-container{
+    width: 173px;
+    height: 40px;
+    margin: auto;
+}
+
+.main-button{
+    width: 173px;
+    height: 40px;
+    font-family: Gotham;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 40px;
+    margin: auto;
+    margin-top: 19px;
+    background-color: #1ed760;
+    color: white;
+    border-radius: 10px;
+}
+
+.main-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #191414;
+    transition: .7s;
+}
+
+.inf-block{
+    visibility: hidden;
+    width: 40%;
+    height: 250px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    z-index: 2;
+    border-radius: 10px;
+    font-family: Gotham;
+    font-weight: bolder;
+    color: #191414;
+}
+
+.left-img:hover + .inf-block{
+    visibility: visible;
+}
+
+.inf-block-main-text{
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 50px;
+}
+
+.inf-block-text{
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}

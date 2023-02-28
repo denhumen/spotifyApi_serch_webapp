@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/css/search_styles.css' %}">
+</head>
+<style>
+    body{
+        background-color: #191414;
+    }
+</style>
+<body>
+    <div class="left-img">
+        <img src="{% static 'main/img/right-image.svg' %}" alt="">
+    </div>
+    <form class="main-block" method="POST"> {% csrf_token %}
+        <div class="main-text">Search for an artist</div>
+        <div class="main-input-block">
+            <img src="{% static 'main/img/artist-svgrepo-com.svg' %}" alt="artist" class="main-input-block-img">
+            <input type="text" class="main-input-block-input" name="button">
+        </div>
+        <button class="main-button"  type="submit">Search</button>
+    </form>
+</body>
+</html>

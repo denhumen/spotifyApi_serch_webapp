@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'main/img/favicon.ico' %}">
+    <title>SpotifyAPI</title>
+    <link rel="stylesheet" href="{% static 'main/css/search_styles.css' %}">
+</head>
+<body>
+    <div class="inf">
+        <div class="left-img">
+            <img src="{% static 'main/img/question_green.svg' %}" alt="">
+        </div>
+        <div class="inf-block">
+            <div class="inf-block-main-text">How it works?</div>
+            <div class="inf-block-text">1. Type the name of the artist you want</div>
+            <div class="inf-block-text">2. Click button "Search"</div>
+            <div class="inf-block-text">3. Wait a couple of seconds</div>
+            <div class="inf-block-text">4. Get the map of available markets for artist's the most popular song</div>
+        </div>
+    </div>
+
+    <form class="main-block" method="POST"> {% csrf_token %}
+        <div class="box">
+            <div class="music one"></div>
+            <div class="music two"></div>
+            <div class="music three"></div>
+            <div class="music four"></div>
+            <div class="music five"></div>
+          </div>
+        <div class="main-input-block">
+            <img src="{% static 'main/img/artist_green.svg' %}" alt="artist" class="main-input-block-img">
+            <input type="text" class="main-input-block-input" name="button">
+        </div>
+        <div class="main-button-container">
+            <button class="main-button" type="submit">Search</button>
+        </div>
+    </form>
+</body>
+</html>
