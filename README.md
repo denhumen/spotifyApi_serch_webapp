@@ -45,7 +45,7 @@ python manage.py runserver
  ![image](https://user-images.githubusercontent.com/116521940/221940760-40b41c12-7d73-4a31-8515-4ceae27fc211.png)
  
  5. Click here to see a live demo of the app.
- [Demo](https://denhumen0830.pythonanywhere.com/)
+ [Demo](https://denhumen0830.pythonanywhere.com/) - it will be available till Sunday 28 May 2023
 
 ## Authors
 
